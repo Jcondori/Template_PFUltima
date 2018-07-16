@@ -61,23 +61,29 @@
     <h:body class="main-body layout-compact">
 
         <p:growl/>
+        
         <h:form>
             <div class="layout-wrapper menu-layout-static ">
 
+                <!--==========================================
+                          BARRA SUPERIOR
+                ===========================================-->
                 <div class="topbar clearfix">
+                    <!--Icono-->
                     <div class="topbar-left">
                         <div class="logo">
                             <img src="../../resources/icon/Ultima/logo.png"/>
                         </div>
                     </div>
 
+                    <!--El resto de la Barra-->
                     <div class="topbar-right">
                         <a id="menu-button" href="#">
                             <i class="material-icons">keyboard_arrow_left</i>
                         </a>
 
                         <a id="topbar-menu-button" href="#">
-                            <i class="material-icons"></i>
+                            <i class="material-icons">more_vert</i>
                         </a>
 
                         <a href="#" class="rightpanel-btn">
@@ -201,6 +207,9 @@
                     </div>
                 </div>
 
+                <!--==========================================
+                          MENU DE LA DERECHA
+                ===========================================-->
                 <div class="layout-rightpanel">
                     <div class="nano">
                         <div class="nano-content right-panel-scroll-content">
@@ -208,7 +217,6 @@
                                 <div class="weather-day">Wednesday</div>
                                 <div class="weather-date">Jan 26</div>
                             </div>
-
                             <div class="layout-rightpanel-content">
                                 <h1>Weather</h1>
                                 <h2>New York, USA</h2>
@@ -253,132 +261,122 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <form id="menuform" name="menuform" enctype="application/x-www-form-urlencoded">
-                    <input type="hidden" name="menuform" value="menuform" />
 
-                    <div class="layout-menu ">
-                        <div class="nano">
-                            <div class="nano-content menu-scroll-content">
-                                <div class="profile">
-                                    <div class="profile-image"></div>
-                                    <a id="profile-options" href="#">
-                                        <span class="profile-name">Jane Williams</span>
+                <!--==========================================
+                          MENU DE USUARIO
+                ===========================================-->
+                <div class="layout-menu ">
+                    <div class="nano">
+                        <div class="nano-content menu-scroll-content">
+                            <div class="profile">
+                                <div class="profile-image"></div>
+                                <a id="profile-options" href="#">
+                                    <span class="profile-name">Jane Williams</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </a>
+                            </div>
+
+                            <ul id="profile-menu" class="ultima-menu">
+                                <li role="menuitem">
+                                    <a href="#" class="ripplelink">
+                                        <i class="material-icons">person</i>
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#" class="ripplelink">
+                                        <i class="material-icons">security</i>
+                                        <span>Privacy</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#" class="ripplelink">
+                                        <i class="material-icons">settings</i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#" class="ripplelink">
+                                        <i class="material-icons">power_settings_new</i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul id="menuform:j_idt48" class="ultima-menu clearfix">
+                                <li id="menuform:um_dashboard" role="menuitem">
+                                    <a href="#">
+                                        <i class="material-icons">dashboard</i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                    <div class="layout-menu-tooltip">
+                                        <div class="layout-menu-tooltip-arrow"></div>
+                                        <div class="layout-menu-tooltip-text">Dashboard</div>
+                                    </div>
+                                </li>
+
+                                <li id="menuform:um_components" role="menuitem" class="">
+                                    <a href="#" class="ripplelink">
+                                        <i class="material-icons">list</i>
+                                        <span>Components</span>
+                                        <span class="ink animate"></span>
+                                        <span class="menuitem-badge">10</span>
                                         <i class="material-icons">keyboard_arrow_down</i>
                                     </a>
-                                </div>
+                                    <div class="layout-menu-tooltip">
+                                        <div class="layout-menu-tooltip-arrow"></div>
+                                        <div class="layout-menu-tooltip-text">Components</div>
+                                    </div>
+                                    <ul role="menu">
+                                        <li id="menuform:um_sample" role="menuitem">
+                                            <a href="#">
+                                                <i class="material-icons">airplay</i>
+                                                <span>Sample Page</span>
+                                            </a>
+                                        </li>
+                                        <li id="menuform:um_forms" role="menuitem">
+                                            <a href="#">
+                                                <i class="material-icons">exit_to_app</i>
+                                                <span>Forms</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                                <ul id="profile-menu" class="ultima-menu">
-                                    <li role="menuitem">
-                                        <a href="#" class="ripplelink">
-                                            <i class="material-icons">person</i>
-                                            <span>Profile</span>
-                                        </a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a href="#" class="ripplelink">
-                                            <i class="material-icons">security</i>
-                                            <span>Privacy</span>
-                                        </a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a href="#" class="ripplelink">
-                                            <i class="material-icons">settings</i>
-                                            <span>Settings</span>
-                                        </a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a href="#" class="ripplelink">
-                                            <i class="material-icons">power_settings_new</i>
-                                            <span>Logout</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul id="menuform:j_idt48" class="ultima-menu clearfix">
-                                    <li id="menuform:um_dashboard" role="menuitem">
-                                        <a href="#">
-                                            <i class="material-icons">dashboard</i>
-                                            <span>Dashboard</span>
-                                        </a>
-                                        <div class="layout-menu-tooltip">
-                                            <div class="layout-menu-tooltip-arrow"></div>
-                                            <div class="layout-menu-tooltip-text">Dashboard</div>
-                                        </div>
-                                    </li>
-
-                                    <li id="menuform:um_components" role="menuitem" class="">
-                                        <a href="#" class="ripplelink">
-                                            <i class="material-icons">list</i>
-                                            <span>Components</span>
-                                            <span class="ink animate"></span>
-                                            <span class="menuitem-badge">10</span>
-                                            <i class="material-icons">keyboard_arrow_down</i>
-                                        </a>
-                                        <div class="layout-menu-tooltip">
-                                            <div class="layout-menu-tooltip-arrow"></div>
-                                            <div class="layout-menu-tooltip-text">Components</div>
-                                        </div>
-                                        <ul role="menu">
-                                            <li id="menuform:um_sample" role="menuitem">
-                                                <a href="#">
-                                                    <i class="material-icons">airplay</i>
-                                                    <span>Sample Page</span>
-                                                </a>
-                                            </li>
-                                            <li id="menuform:um_forms" role="menuitem">
-                                                <a href="#">
-                                                    <i class="material-icons">exit_to_app</i>
-                                                    <span>Forms</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li id="menuform:um_utils" role="menuitem">
-                                        <a href="#">
-                                            <i class="material-icons">build</i>
-                                            <span>Utils</span>
-                                        </a>
-                                        <div class="layout-menu-tooltip">
-                                            <div class="layout-menu-tooltip-arrow"></div>
-                                            <div class="layout-menu-tooltip-text">Utils</div>
-                                        </div>
-                                    </li>
-                                    <li id="menuform:um_doc" role="menuitem">
-                                        <a href="#">
-                                            <i class=" material-icons">publish</i>
-                                            <span>Docs</span>
-                                        </a>
-                                        <div class="layout-menu-tooltip">
-                                            <div class="layout-menu-tooltip-arrow"></div>
-                                            <div class="layout-menu-tooltip-text">Docs</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <script id="menuform:j_idt48_s" type="text/javascript">PrimeFaces.cw("Ultima", "me", {id: "menuform:j_idt48"});</script>
-                            </div>
-                        </div>
-                    </div>
-                    <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-5807661261073220006:1548480324296450020"
-                           autocomplete="off" />
-                </form>
-
-                <div class="layout-main">
-
-
-                    <div class="footer">
-                        <div class="card clearfix">
-                            <span class="footer-text-left">PrimeFaces ULTIMA</span>
-                            <span class="footer-text-right">
-                                <span class="ui-icon ui-icon-copyright"></span>
-                                <span>All Rights Reserved</span>
-                            </span>
+                                <li id="menuform:um_utils" role="menuitem">
+                                    <a href="#">
+                                        <i class="material-icons">build</i>
+                                        <span>Utils</span>
+                                    </a>
+                                    <div class="layout-menu-tooltip">
+                                        <div class="layout-menu-tooltip-arrow"></div>
+                                        <div class="layout-menu-tooltip-text">Utils</div>
+                                    </div>
+                                </li>
+                                <li id="menuform:um_doc" role="menuitem">
+                                    <a href="#">
+                                        <i class=" material-icons">publish</i>
+                                        <span>Docs</span>
+                                    </a>
+                                    <div class="layout-menu-tooltip">
+                                        <div class="layout-menu-tooltip-arrow"></div>
+                                        <div class="layout-menu-tooltip-text">Docs</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <script id="menuform:j_idt48_s" type="text/javascript">PrimeFaces.cw("Ultima", "me", {id: "menuform:j_idt48"});</script>
                         </div>
                     </div>
                 </div>
+
+                <!--==========================================
+                          PRE-LOADER
+                ===========================================-->
+                <div class="layout-main">
+                    <!--Aqui-->
+                </div>
             </div>
-            
+
         </h:form>
     </h:body>
 </html>

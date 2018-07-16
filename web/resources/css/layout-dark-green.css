@@ -351,7 +351,7 @@
   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
 
 .layout-rightpanel .layout-rightpanel-header {
-  background: url("/ultima/javax.faces.resource/images/dashboard/sidebar-image.jpg.xhtml?ln=ultima-layout") center;
+  background: url("../../resources/icon/Ultima/sidebar-image.jpg") center;
   height: 118px;
   padding: 14px;
   -webkit-box-sizing: border-box;
@@ -545,7 +545,7 @@
 .landing-wrapper #header {
   width: 100%;
   min-height: 400px;
-  background: url("/ultima/javax.faces.resource/images/landing/landing-header.png.xhtml?ln=ultima-layout") top left no-repeat #f7f7f7;
+  background:#f7f7f7;
   background-size: 100% auto; }
   .landing-wrapper #header .header-top {
     width: 960px;
@@ -626,7 +626,7 @@
       .landing-wrapper #features .feature-icon:hover i {
         color: #ffffff; }
 .landing-wrapper #promotion {
-  background: url("/ultima/javax.faces.resource/images/landing/promotion.png.xhtml?ln=ultima-layout") top left no-repeat;
+/*  background: url("/ultima/javax.faces.resource/images/landing/promotion.png.xhtml?ln=ultima-layout") top left no-repeat;*/
   background-size: 100% auto; }
   .landing-wrapper #promotion .ui-lg-8 {
     padding: 150px 0 0 150px; }
@@ -867,7 +867,8 @@ body {
     vertical-align: middle;
     width: 200px;
     height: 30px;
-    background: url("/ultima/javax.faces.resource/images/logo.png.xhtml?ln=ultima-layout") top left no-repeat; }
+    /*background: url("/ultima/javax.faces.resource/images/logo.png.xhtml?ln=ultima-layout") top left no-repeat;*/
+  }
   .layout-wrapper .topbar .topbar-left {
     box-sizing: border-box;
     padding: 20px;
@@ -1064,7 +1065,7 @@ body {
   .layout-wrapper .layout-menu.layout-menu-dark {
     background-color: #0e2031; }
     .layout-wrapper .layout-menu.layout-menu-dark .profile {
-      background-image: url("/ultima/javax.faces.resource/images/profile-bg-dark.png.xhtml?ln=ultima-layout"); }
+      background-image: url("../../resources/icon/Ultima/profile-bg-dark.png"); }
       .layout-wrapper .layout-menu.layout-menu-dark .profile .profile-name {
         color: #ffffff; }
       .layout-wrapper .layout-menu.layout-menu-dark .profile i {
@@ -1436,7 +1437,7 @@ body {
       .layout-wrapper .topbar-items > li.profile-item .profile-image {
         width: 36px;
         height: 36px;
-        background: url("/ultima/javax.faces.resource/images/avatar2x.png.xhtml?ln=ultima-layout") top left no-repeat;
+        background: url("../../resources/icon/Ultima/avatar2x.png") top left no-repeat;
         background-size: 36px 36px; }
       .layout-wrapper .topbar-items > li > ul {
         position: absolute;
@@ -1848,7 +1849,7 @@ body {
       vertical-align: middle;
       width: 24px;
       height: 24px;
-      background: url("/ultima/javax.faces.resource/images/avatar2x.png.xhtml?ln=ultima-layout") top left no-repeat;
+      background: url("../../resources/icon/Ultima/avatar2x.png") top left no-repeat;
       background-size: 24px 24px;
       margin-right: 14px; }
     .layout-wrapper .topbar .topbar-right .topbar-items > li.profile-item span {
@@ -1904,7 +1905,7 @@ body {
     margin-left: 0px; } }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .layout-wrapper .topbar .logo {
-    background: url("/ultima/javax.faces.resource/images/logo2x.png.xhtml?ln=ultima-layout") top left no-repeat;
+    background: url("../../resources/icon/Ultima/logo2x.png") top left no-repeat;
     background-size: 200px 30px; } }
 @media (max-width: 399px) {
   .layout-wrapper .topbar .topbar-right #topbar-menu-button {
