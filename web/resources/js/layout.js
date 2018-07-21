@@ -37,9 +37,6 @@ PrimeFaces.widget.Ultima = PrimeFaces.widget.BaseWidget.extend({
         if(!this.wrapper.hasClass('menu-layout-horizontal') && !this.wrapper.hasClass('layout-menu-slim')) {
             this.restoreMenuState();
         }
-        
-        var $this = this;
-        this.menuWrapper.children('.nano').nanoScroller({flash:true, isRTL:$this.isRTL});
     },
     
     _bindEvents: function() {

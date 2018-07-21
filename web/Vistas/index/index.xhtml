@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:body>
+
+        <ui:composition template="../Template/Template.xhtml">
+
+            <ui:define name="content">
+
+                <style>
+                    /* Input Text */
+                    span.md-inputfield > input.ui-inputfield.ui-state-error{
+                        background-image: linear-gradient(to bottom, #FF0000, #FF0000), linear-gradient(to bottom, #FC6262, #FC6262) !important;
+                    }
+
+                    span.md-inputfield > label.ui-outputlabel.ui-state-error{
+                        color: #FF0000 !important;
+                    }
+
+                    /* Select One Menu*/
+                    div.ui-selectonemenu.ui-state-error{
+                        background-image: linear-gradient(to bottom, #FF0000, #FF0000), linear-gradient(to bottom, #FC6262, #FC6262) !important;
+                    }
+
+                    div.ui-selectonemenu.ui-state-error > label.ui-selectonemenu-label{
+                        color: #FF0000 !important;
+                    }
+
+                    div.ui-selectonemenu.ui-state-error > div > span {
+                        color: #FF0000 !important;
+                    }
+
+                    /* Auto Complete -> label es comun*/
+                    span.md-inputfield > span > input.ui-inputfield.ui-state-error{
+                        background-image: linear-gradient(to bottom, #FF0000, #FF0000), linear-gradient(to bottom, #FC6262, #FC6262) !important;
+                    }
+
+                    /* Espacio de Formularios de Inputs */
+                    div.row.formulario > div.col {
+                        padding: 0.5em;
+                    }
+                    div.row.formulario > div.col.selectmenu {
+                        padding: 12px 16px;
+                    }
+                </style>
+
+                <h:form id="form">
+                    <div class="row formulario">
+                        <div class="col l12 m12 s12">
+                            <h:panelGroup styleClass="md-inputfield">
+                                <p:inputText id="name" required="true" requiredMessage="Ingrese Dato"/>
+                                <p:outputLabel for="name" value="Name" />
+                            </h:panelGroup>
+                        </div>
+                        <div class="col l12 m12 s12 selectmenu">
+                            <p:selectOneMenu required="true" requiredMessage="Ingrese Dato">
+                                <f:selectItem itemLabel="Seleccione"/>
+                                <f:selectItem itemLabel="1" itemValue="1"/>
+                                <f:selectItem itemLabel="2" itemValue="2"/>
+                                <f:selectItem itemLabel="3" itemValue="3"/>
+                            </p:selectOneMenu>
+                        </div>
+                        <div class="col l12 m12 s12">
+                            <h:panelGroup styleClass="md-inputfield">
+                                <p:autoComplete id="name2" required="true" requiredMessage="Ingrese Dato"/>
+                                <p:outputLabel for="name2" value="Name" />
+                            </h:panelGroup>
+                        </div>
+                        <div class="col l12 m12 s12">
+                            <h:panelGroup styleClass="md-inputfield">
+                                <p:password id="name3" required="true" requiredMessage="Ingrese Dato"/>
+                                <p:outputLabel for="name3" value="Name" />
+                            </h:panelGroup>
+                        </div>
+                    </div>
+                    <p:commandButton value="Action" update="form"/>
+
+                </h:form>
+
+            </ui:define>
+
+        </ui:composition>
+
+    </h:body>
+</html>
