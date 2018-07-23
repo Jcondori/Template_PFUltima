@@ -175,7 +175,6 @@ if (!PrimeFaces.dialog) {
 
                 dialogReturnBehavior.call(windowContext, ext);
             }
-
             dlgWidget.hide();
         },
 
@@ -7592,6 +7591,8 @@ PrimeFaces.widget.Dialog = PrimeFaces.widget.BaseWidget.extend({
 
         $(document.body).append('<div id="' + this.id + '_modal" class="ui-widget-overlay ui-dialog-mask"></div>')
                         .children(this.jqId + '_modal').css('z-index' , this.jq.css('z-index') - 1);
+        
+        $(document.body).addClass('ocultar-scroll');
 
         //Disable tabbing out of modal dialog and stop events from targets outside of dialog
         doc.on('keydown.' + this.id,
@@ -7743,6 +7744,7 @@ PrimeFaces.widget.Dialog = PrimeFaces.widget.BaseWidget.extend({
             }
             this.onHide();
         }
+        $(document.body).removeClass('ocultar-scroll');
     },
 
     applyFocus: function() {
