@@ -266,7 +266,7 @@
             <!--==========================================
                       MENU DE USUARIO
             ===========================================-->
-           <form id="menuform" name="menuform">
+           <h:form id="menuform">
             <div class="layout-menu layout-menu-dark">
                 <div class="nano">
                     <div class="nano-content menu-scroll-content">
@@ -365,14 +365,14 @@
                                 </div>
                             </li>
                         </ul>
+                        <script>
+                              PrimeFaces.cw("Ultima", "me", {id: "menuform"});
+                        </script>
                     </div>
                 </div>
             </div>
-          </form>
-          <script>
-              PrimeFaces.cw("Ultima", "me", {id: "menuform"});
-          </script>
-
+          </h:form>
+          
             <!--==========================================
                               CONTENIDO
             ===========================================-->
