@@ -1148,7 +1148,7 @@ body {
     /* Support for IE. */
     font-feature-settings: 'liga'; }
     .layout-wrapper.menu-layout-overlay .topbar .topbar-right #menu-button i:before {
-      content: ""; }
+      content: ""; }
 .layout-wrapper .layout-main {
   padding: 95px 15px 15px 15px;
   -moz-transition: margin-left 0.3s;
