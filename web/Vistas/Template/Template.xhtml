@@ -266,7 +266,8 @@
             <!--==========================================
                       MENU DE USUARIO
             ===========================================-->
-            <div class="layout-menu ">
+           <h:form id="menuform">
+            <div class="layout-menu layout-menu-dark">
                 <div class="nano">
                     <div class="nano-content menu-scroll-content">
                         <div class="profile">
@@ -303,7 +304,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <ul id="menuform" class="ultima-menu clearfix">
+                        <ul id="menuform:submenu" class="ultima-menu clearfix">
                             <li role="menuitem">
                                 <a href="#">
                                     <i class="material-icons">dashboard</i>
@@ -365,12 +366,13 @@
                             </li>
                         </ul>
                         <script>
-                            PrimeFaces.cw("Ultima", "me", {id: "menuform"});
+                              PrimeFaces.cw("Ultima", "me", {id: "menuform"});
                         </script>
                     </div>
                 </div>
             </div>
-
+          </h:form>
+          
             <!--==========================================
                               CONTENIDO
             ===========================================-->
